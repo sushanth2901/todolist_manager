@@ -23,7 +23,7 @@ describe("Test case for database", () => {
 
   test("Creates a todo and responds with json at /todos POST endpoint", async () => {
     const response = await agent.post("/todos").send({
-      title: "Buy milk",
+      title: "Buy Chocolate",
       dueDate: new Date().toISOString(),
       completed: false,
     });
