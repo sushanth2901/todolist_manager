@@ -100,7 +100,7 @@ describe("Todo test suite ", () => {
     const parsedGroupedResponse = JSON.parse(groupedTodosResponse.text);
     const completedItemsCount = parsedGroupedResponse.dueToday.length;
     const newTodo = parsedGroupedResponse.dueToday[completedItemsCount - 1];
-    //const completed = !newTodo.completed;
+     //const completed = !newTodo.completed;
     res = await agent.get("/");
     csrfToken = extractCsrfToken(res);
 
