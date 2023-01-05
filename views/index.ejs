@@ -33,7 +33,7 @@
           console.log(err1);
           })
         }
-        function deleteATodo(id) {
+        function deleteTodo(id) {
         fetch(`/todos/${id}`,{
           method: "delete",
           headers: {"Content-Type":"application/json"},
